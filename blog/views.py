@@ -2,8 +2,10 @@ from django.shortcuts import render
 from django.views import generic
 from .models import Post
 
-# Create your views here.
+# Create your views her
+
+
 class PostList(generic.ListView):
     model = Post
-    queryset = Post.objects.all()
+    queryset = Post.objects.filter(status=1)
     template_name = "post_list.html"
