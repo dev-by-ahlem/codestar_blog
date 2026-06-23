@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <h1>{{ about.title }}</h1>
+            <p>{{ about.content }}</p>
+            <p>Last updated: {{ about.updated_on }}</p>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
